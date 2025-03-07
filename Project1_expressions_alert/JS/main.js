@@ -1,34 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-  
-    <title> 1- Basic CSS Demo</title>
-	<link rel="stylesheet" href="css/Basic_style.css">
-</head>
 
-<body>
-    
-<div>
-    <h1> 1- Basic CSS Demo</h1>
-</div>
-<div class="container">
-        <div class="squares">
-            <p>Box 1</p>
-        </div>
 
-        <div class="squares">
-            <p>Box 2</p>
-        </div>
+//variaable definition
+Sent1="This is the 1st string" ;
+Sent2="This is the 2nd string";
 
-        <div class="squares">
-            <p>Box 3</p>
-        </div>
 
-        <div class="squares">
-            <p>Box 4</p>
-        </div>
-</div>
 
-</body>
-</html>
+//concetenation
+document.write(Sent1 + " "+ Sent2 + " "  + 12312242342); 
+
+//expression
+document.write=(5*10000) ;
+
+
+
