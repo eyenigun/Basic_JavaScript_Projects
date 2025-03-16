@@ -1,12 +1,13 @@
 
 function my_Dictionary () {
   var   movie= {
-
-titLe: "asdfg",
-genre: "sdfsdfs",
-director: "ASDLKDA",
+//Dictionary
+title: "In the woods",
+genre: "Horror",
+director: "Erhan Yenigun",
 
   } ;
+
   delete movie.director
   document.getElementById("Dictionary").innerHTML =movie.director ;
 }

@@ -7,7 +7,10 @@ Sent2="This is the 2nd string";
 
 
 //concetenation
-document.write(Sent1 + " "+ Sent2 + " "  + 12312242342); 
+
+document.write(Sent1);
+document.write(Sent2);
+document.write(Sent1 + " "+ Sent2 + " "  + 123); 
 
 //expression
 document.write=(5*10000) ;

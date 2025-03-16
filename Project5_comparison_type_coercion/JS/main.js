@@ -1,5 +1,10 @@
+//Boolean
 
-var x= true;
+function Boolean () {
+  var x= true;
+  document.getElementById("Boolean").innerHTML = x ;
+} ;
+
 
 document.write(typeof x) ;
 document.write ("<br>") ;
@@ -21,7 +26,7 @@ document.write ("<br>") ;
 
 
 
-
+//Negate
 function not_Function () {
   document.getElementById("Not").innerHTML = !(1>2) ;
 
