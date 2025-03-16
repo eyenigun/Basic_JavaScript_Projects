@@ -1,10 +1,12 @@
+//
+
 // Variable to keep track of whose turn it is
 let activePlayer = 'X';
 // Array to store moves - use this to determine win conditions
 let selectedSquares = [];
 
 // Function to place X or O in a square
-function placeXorO(squareNumber) {
+function placeXOrO(squareNumber) {
     // Checks if the square has been selected already
     if (!selectedSquares.some(element => element.includes(squareNumber))) {
         // Variable to hold the HTML element that was clicked
@@ -129,7 +131,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         y2 = coordY2,
         x = x1,
         y = y1;
-}
+
 
 function animateLineDrawing() {
     const animationLoop = requestAnimationFrame(animateLineDrawing);
@@ -164,7 +166,7 @@ audio('./media/winGame.mp3');
 animateLineDrawing();
 setTimeout(function () { clear(); resetGame(); }, 1000);
 
-
+}
 // Disables click during the computer's turn
 function disableClick() {
     body.style.pointerEvents = 'none';
