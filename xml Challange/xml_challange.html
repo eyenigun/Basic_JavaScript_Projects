@@ -8,15 +8,17 @@
 var XML_Parser, XML_Document;
 var Movie= "<movie>" +
     "<title> Shndlers List </title>"  +
-    "<director> Spielberg </director>" +         
+    "<director> Spielberg </director>" +  
+    "<year> 1993 </year>" +       
     "</movie>" ;
    
-      
+      //creates a new DOM Parser
    XML_Parser=new DOMParser();
 
+   //creates a new XML DOM object using text string
    XML_Document=XML_Parser.parseFromString(Movie, "text/xml");
 
-   document.getElementById("XML_Example").innerHTML= XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+   document.getElementById("XML_Example").innerHTML= XML_Document.getElementsByTagName("director")[0].childNodes[0].nodeValue;
 
    </script>
 	
