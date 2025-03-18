@@ -1,87 +1,101 @@
-/*calculator.css*/
 
-html {
-    font-size: 70%;
+/* style.css */
+
+* {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
-.calculator {
-    border: 1px solid darkslategray;
-    border-radius: 7px;
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next and previous buttons */
+.prev,
+.next {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-}
-
-.calculator-screen {
-    width: 100%;
-    font-size: 5rem;
-    height: 80px;
-    border: none;
-    background-color: black;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
     color: white;
-    text-align: right;
-    padding-right: 20px;
-    padding-left: 20px;
-    border-radius: 7px 7px 0px 0px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px 0 0 3px;
+    user-select: none;
 }
 
-button {
-    height: 70px;
-    border-radius: 3px;
-    border: 1px solid darkslategray;
-    background-color: transparent;
-    font-size: 3.2rem;
-    color: black;
-    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.6));
-    text-shadow: 0 1px rgba(255, 255, 255, .4);
-    box-shadow: inset 0 0 1px rgba(255, 255, 255, .05),
-                inset 1px 0 0 rgba(255, 255, 255, .05),
-                inset -1px 0 0 rgba(255, 255, 255, .05),
-                1px 0 0 rgba(255, 255, 255, .05);
+/* Position the next button to the right */
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
 }
 
-button:hover {
-    background-color: #e1e1e1;
+/* On hover, add a slightly transparent black background color to prev and next buttons */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.operator {
-    color: red;
-    background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.5));
-    background-color: lightgray;
+
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
-.all-clear {
-background-color: red;
-border-color: darkslategray;
-color: #fff;
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
-.equal-sign {
-    background-color: blue;
-    border-color: darkslategray;
-    color: #fff;
-    height: 100%;
-    grid-area: 2/4/6/5;
+/* The dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.equal-sign:hover {
-
-background-color: darkblue;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
-.calculator-keys {
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
-    padding: 20px;
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
