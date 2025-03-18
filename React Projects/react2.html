@@ -29,15 +29,17 @@
 
                             return X (
                             'button',
-                            {onclick: () => this.setState ({ liked:true})}, 
-                            'Like' 
+                            {onclick: () => this.setState ({ liked:true})} ,
+                               'Like' 
                             );
-                }
-            }
+        }
+    }
 
 
                 const domContainer = document.querySelector('#like_button_container') ;
                 ReactDOM.render(X(likeButton), domContainer);
+
+
                 </script>
 
 
