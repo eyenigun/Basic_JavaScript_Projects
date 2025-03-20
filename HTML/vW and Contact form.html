@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("firstname").value;
+            var lastName = document.getElementById("lastname").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            
+            if (firstName === "" || lastName === "" || email === "" || phone === "") {
+                alert("All fields must be filled out before submitting.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+<!-- vv unit challange -->
+<h1 style="font-size:10vw;">Responsive Text</h1> 
+
+<p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+<p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+<h2>Contact Form</h2>
+<form onsubmit="return validateForm()">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" name="firstname"><br><br>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
