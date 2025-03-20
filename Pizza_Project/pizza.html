@@ -12,7 +12,9 @@
         <h1 style="margin:0 0px 0 20px;">Pizza Drill Tutorial</h1>
         <input id="btnOrder" type="button" onclick="getReceipt()"
                value="Place Order">
-        <form id="frmMenu">
+
+
+        <form id="frmMenu"> 
             <div class="menu left">
                 <h3>Size:</h3>
                 <input class="size" type="radio" name="Size"
@@ -23,7 +25,31 @@
                        value="Large Pizza" checked>Large Pizza<br>
                 <input class="size" type="radio" name="Size"
                        value="Extra Large Pizza">Extra Large Pizza<br>
-            </div>
+              
+                       <input class="size" type="radio" name="Size"
+                       value="Extra extra Large Pizza">Extra extra Large Pizza<br>
+                                 </div>
+
+     
+
+       <div class="menu center">
+              <h3>Vegetables:</h3>
+              <input class="toppings" type="checkbox" name="Topping"
+                     value="Mushroom">Mushroom<br>
+              <input class="toppings" type="checkbox" name="Topping"
+                     value="Onions">Onions<br>
+        
+              <input class="toppings" type="checkbox" name="Topping"
+                     value="Tomatoes">Tomatoes<br>
+                     <input class="toppings" type="checkbox" name="Topping"
+                     value="Olives">Olives<br>   
+          </div>
+
+
+      
+
+
+
 
             <div class="menu right">
                 <h3>Meats:</h3>
@@ -39,13 +65,19 @@
                        value="Anchovy">Anchovy<br>
                 <input class="toppings" type="checkbox" name="Topping"
                        value="Chicken">Chicken<br>
+                       <input class="toppings" type="checkbox" name="Topping"
+                       value="Salami">Salami<br>   
             </div>
 
             <div id="cart">
                 <div id="showText"></div>
                 <div id="totalPrice"></div>
             </div>
+
+
         </form>
+
+
     </div>
 </body>
 </html>

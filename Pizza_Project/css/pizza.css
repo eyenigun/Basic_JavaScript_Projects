@@ -24,7 +24,7 @@ h3{
 div {
 
 
-    color: black;
+    color: red;
     font-family: monospace;
 }
 
@@ -52,6 +52,14 @@ div {
     float: left;
 }
 
+
+.center{
+
+width: 200px;
+height: 200px;
+float: left;
+
+}
 .right {
     width: 200px;
     height: 200px;
@@ -76,4 +84,6 @@ div {
     margin: 10px 0px 0px 100px;
     width: 100px;
     height: 40px;
+    display: block;
+    margin: 25px auto;
 }
